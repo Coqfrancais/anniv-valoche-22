@@ -12,6 +12,6 @@ Question.destroy_all
 puts "Création des questions..."
 question_1 = Question.create(titre: "Shine bright like a diamond", description: "Aujourd'hui, qui brille le plus ?")
 question_2 = Question.create(titre: "La Pubelle 🥰", description: "Aujourd'hui, où est la pu belle ?")
-question_3 = Question.create(titre: "Quel animal es-tu", description: "Quel est l'animal totem qui représente le mieux Valentine")
+question_3 = Question.create(titre: "Quel animal es-tu", description: "Quel est l'animal totem qui représente le mieux Valentine ?")
 
 puts "Fini!"

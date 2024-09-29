@@ -1,1 +1,21 @@
 <h1>Toutes les questions du Quizz</h1>
+
+
+<table class="table">
+  <thead>
+    <tr>
+        <th>#</th>
+        <th>Titre</th>
+        <th>Description</th>
+    </tr>
+  </thead>
+
+<% @questions.each do |question| %>  
+  <tr >
+    <td><%= question.id%></td>
+    <td><%= question.titre %></td>
+    <td><%= question.description %></td>
+    <td><%= link_to "voir la question", question_path %>
+  </tr>
+<% end %>
+</table>
