@@ -190,7 +190,6 @@ GEM
     simple_form (5.3.1)
       actionpack (>= 5.2)
       activemodel (>= 5.2)
-    spring (4.2.1)
     sprockets (4.2.1)
       concurrent-ruby (~> 1.0)
       rack (>= 2.2.4, < 4)
@@ -245,7 +244,6 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver (>= 4.0.0.rc1)
   simple_form
-  spring
   turbolinks (~> 5)
   tzinfo-data
   web-console (>= 4.1.0)
