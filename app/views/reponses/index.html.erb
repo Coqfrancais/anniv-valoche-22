@@ -1,0 +1,25 @@
+<h1>Les réponses</h1>
+
+<table class="table">
+  <thead>
+    <tr>
+        <th>#</th>
+        <th>Description</th>
+        <th>Bonne réponse ?</th>
+        <th># Question id</th>
+        <th>Titre Question</th>
+        <th>Lien question</th>
+    </tr>
+  </thead>
+
+<% @reponses.each do |reponse| %>  
+  <tr >
+    <td><%= reponse.id%></td>
+    <td><%= reponse.description %></td>
+    <td><%= reponse.bonne_reponse %></td>
+    <td><%= reponse.question.id %></td>
+    <td><%= reponse.question.titre %></td>
+    <td><%= link_to "Voir la question", question_show_path(reponse.question.id) %>
+  </tr>
+<% end %>
+</table>
