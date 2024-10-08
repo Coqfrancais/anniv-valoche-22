@@ -7,6 +7,7 @@
         <th>#</th>
         <th>Titre</th>
         <th>Description</th>
+        <th>Lien</th>
     </tr>
   </thead>
 
@@ -15,7 +16,7 @@
     <td><%= question.id%></td>
     <td><%= question.titre %></td>
     <td><%= question.description %></td>
-    <td><%= link_to "voir la question", question_path %>
+    <td><%= link_to "Voir la question", question_show_path(question) %>
   </tr>
 <% end %>
 </table>
