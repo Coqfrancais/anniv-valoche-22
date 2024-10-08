@@ -4,3 +4,7 @@
 <p><%= @questions.description %></p>
 
 <%= link_to "Toutes les questions", question_path %>
+<br>
+<br>
+<%= link_to "Question Précédente", question_show_path(@questions.id - 1) %>
+<%= link_to "Question suivante", question_show_path(@questions.id + 1)%>
