@@ -4,5 +4,6 @@ Rails.application.routes.draw do
 
   # verb "path", to: "controller#action"
   get "questions", to: "questions#index", as: :question
+  get "questions/:id", to: "questions#show", as: :question_show
   
 end
