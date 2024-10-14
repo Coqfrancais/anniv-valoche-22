@@ -6,7 +6,7 @@
 <div>
 <ul>
   <% @questions.reponses.each do |reponse| %>
-    <li><%= reponse.description %>, <%= cl_image_tag(reponse.image) %></li>  
+    <li><%= reponse.description %>, <%= cl_image_tag(reponse.image, width: 100) %></li>  
   <% end %>
 </ul>
 </div>
