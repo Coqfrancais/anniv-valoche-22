@@ -2,6 +2,14 @@
 
 <h2><%= @questions.id %>. <%= @questions.titre %></h2>
 <p><%= @questions.description %></p>
+<p>-------------------------------</p>
+<div>
+<ul>
+  <% @questions.reponses.each do |reponse| %>
+    <li><%= reponse.description %>, <%= cl_image_tag(reponse.image, width: 100) %></li>  
+  <% end %>
+</ul>
+</div>
 
 <%= link_to "Toutes les questions", question_path %>
 <br>
